@@ -47,15 +47,27 @@ public class PracticeDay3 {
 //        Practice
 
 
-        int arm = sc.nextInt();
-        int arm2 = arm, result =0;
-        while(arm2 != 0){
-            int digit = arm2 % 10;
-            result += digit*digit*digit;
-            arm2/= 10;
+//        int arm = sc.nextInt();
+//        int arm2 = arm, result =0;
+//        while(arm2 != 0){
+//            int digit = arm2 % 10;
+//            result += digit*digit*digit;
+//            arm2/= 10;
+//
+//        }
+//        System.out.println(result== arm ? "ArmStrong Number" : "No not a ArmStrong Number");
 
+        int prime = sc.nextInt();
+        if(prime< 2){
+            return;
         }
-        System.out.println(result== arm ? "ArmStrong Number" : "No not a ArmStrong Number");
+        for(int i = 2; i*i<=prime; i++){
+            if(prime % i == 0){
+                System.out.println(prime + " Not a Prime Number");
+                return;
+            }
+        }
+        System.out.println(prime +  " Prime Number");
 
     }
 }
