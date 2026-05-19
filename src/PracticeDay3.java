@@ -57,17 +57,22 @@ public class PracticeDay3 {
 //        }
 //        System.out.println(result== arm ? "ArmStrong Number" : "No not a ArmStrong Number");
 
-        int prime = sc.nextInt();
-        if(prime< 2){
-            return;
+//        int prime = sc.nextInt();
+//        if(prime< 2){
+//            return;
+//        }
+//        for(int i = 2; i*i<=prime; i++){
+//            if(prime % i == 0){
+//                System.out.println(prime + " Not a Prime Number");
+//                return;
+//            }
+//        }
+//        System.out.println(prime +  " Prime Number");
+
+        int table = sc.nextInt();
+        for(int i = 1; i <=10 ; i++){
+            System.out.println(table + " x " + i + " = " + (table*i));
         }
-        for(int i = 2; i*i<=prime; i++){
-            if(prime % i == 0){
-                System.out.println(prime + " Not a Prime Number");
-                return;
-            }
-        }
-        System.out.println(prime +  " Prime Number");
 
     }
 }
