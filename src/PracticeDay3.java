@@ -34,15 +34,28 @@ public class PracticeDay3 {
 //        }
 
 //        Sum of  digits of a number
-        int dig = sc.nextInt(), sum1 = 0;
-        while(dig != 0){
-            int d = dig % 10;
-            sum1+= d;
-            dig /= 10;
+//        int dig = sc.nextInt(), sum1 = 0;
+//        while(dig != 0){
+//            int d = dig % 10;
+//            sum1+= d;
+//            dig /= 10;
+//
+//        }
+//        System.out.println(sum1);
+
+
+//        Practice
+
+
+        int arm = sc.nextInt();
+        int arm2 = arm, result =0;
+        while(arm2 != 0){
+            int digit = arm2 % 10;
+            result += digit*digit*digit;
+            arm2/= 10;
 
         }
-        System.out.println(sum1);
-
+        System.out.println(result== arm ? "ArmStrong Number" : "No not a ArmStrong Number");
 
     }
 }
