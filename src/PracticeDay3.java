@@ -68,11 +68,20 @@ public class PracticeDay3 {
 //            }
 //        }
 //        System.out.println(prime +  " Prime Number");
+//
+//        int table = sc.nextInt();
+//        for(int i = 1; i <=10 ; i++){
+//            System.out.println(table + " x " + i + " = " + (table*i));
+//        }
 
-        int table = sc.nextInt();
-        for(int i = 1; i <=10 ; i++){
-            System.out.println(table + " x " + i + " = " + (table*i));
+        int sumOfDigit = sc.nextInt();
+        int sum =0;
+        while(sumOfDigit != 0){
+            int digit = sumOfDigit %10;
+            sum+= digit;
+            sumOfDigit/= 10;
         }
+        System.out.println(sum);
 
     }
 }
