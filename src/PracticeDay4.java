@@ -21,5 +21,14 @@ public class PracticeDay4 {
             System.out.println();
 
         }
+        System.out.println();
+//            inverted triangle
+            int n3 = 5;
+            for(int i = n;i>=1;i--){
+                for(int j = 1; j<=i; j++) System.out.print("*");
+                System.out.println();
+            }
+
+
     }
 }
