@@ -13,10 +13,12 @@ public class PracticeDay4 {
             System.out.println();
 
         }
-
+        System.out.println();
 //        triangle pattern
         int n2  = 5;
         for(int i = 1;i<=n;i++){
+            for(int j =1; j<=i; j++) System.out.print("*");
+            System.out.println();
 
         }
     }
